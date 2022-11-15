@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Git-Commands</title>
+   <link rel="stylesheet" href="../CSS/Git-Commands.css">
+</head>
+
+<header>
+   <div class="header-opacity">
+   <h2>Commands</h2>
+   </div>
+</header>
+<hr>
+<body>
+   <table class="first-list">
+      <tr>
+         <th colspan="2">Main Porcelain Commands</th>
+      </tr>
+      <tr id="head-color">
+         <th colspan="1" class="head-color" id="head-color">$&nbsp;git &nbsp;&lt;command&gt;</th>
+         <th class="head-color" id="head-color2">Description</th>
+      </tr>
+      <tr>
+         <td>add</td>
+         <td>Add file contents to the index</td>
+      </tr>
+      <tr>
+         <td>am</td>
+         <td>Apply a series of patches from a mailbox</td>
+      </tr>
+      <tr>
+         <td>archive</td>
+         <td>Create an archive of files from a named tree</td>
+      </tr>
+      <tr>
+         <td>bisect</td>
+         <td>Use binary search to find the commit that introduced a bug</td>
+      </tr>
+      <tr>
+         <td>branch</td>
+         <td>List, create, or delete branches</td>
+      </tr>
+      <tr>
+         <td>bundle</td>
+         <td>Move objects and refs by archive</td>
+      </tr>
+      <tr>
+         <td>checkout</td>
+         <td>Switch branches or restore working tree files</td>
+      </tr>
+      <tr>
+         <td>cherry-pick</td>
+         <td>Apply the changes introduced by some existing commits</td>
+      </tr>
+      <tr>
+         <td>citool</td>
+         <td>Graphical alternative to git-commit</td>
+      </tr>
+      <tr>
+         <td>clean</td>
+         <td>Remove untracked files from the working tree</td>
+      </tr>
+      <tr>
+         <td>clone</td>
+         <td>Clone a repository into a new directory</td>
+      </tr>
+      <tr>
+         <td>commit</td>
+         <td>Record changes to the repository</td>
+      </tr>
+      <tr>
+         <td>describe</td>
+         <td>Gives an object a human readable name based on an available ref</td>
+      </tr>
+      <tr>
+         <td>diff</td>
+         <td>Show changes between commits, commit and working tree, ect</td>
+      </tr>
+      <tr>
+         <td>fetch</td>
+         <td>Download objects and refs from another repository</td>
+      </tr>
+      <tr>
+         <td>format-patch</td>
+         <td>Prepare patches for email submission</td>
+      </tr>
+      <tr>
+         <td>gc</td>
+         <td>Cleanup unnecessary files and optimize the local repository</td>
+      </tr>
+      <tr>
+         <td>gitk</td>
+         <td>The Git repository browser</td>
+      </tr>
+      <tr>
+         <td>grep</td>
+         <td>Print lines matching a pattern</td>
+      </tr>
+      <tr>
+         <td>gui</td>
+         <td>A portable graphical interface to Git</td>
+      </tr>
+      <tr>
+         <td>init</td>
+         <td>Create an empty Git repository or reinitialize an existing one</td>
+      </tr>
+      <tr>
+         <td>log</td>
+         <td>Show commit logs</td>
+      </tr>
+      <tr>
+         <td>maintenance</td>
+         <td>Run tasks to optimize Git repository data</td>
+      </tr>
+      <tr>
+         <td>merge</td>
+         <td>Join two or more development histories together</td>
+      </tr>
+      <tr>
+         <td>mv</td>
+         <td>Move or rename a file, a directory, or a symlink</td>
+      </tr>
+      <tr>
+         <td>notes</td>
+         <td>Add or inspect object notes</td>
+      </tr>
+      <tr>
+         <td>pull</td>
+         <td>Fetch from and integrate with another repository or a local branch</td>
+      </tr>
+      <tr>
+         <td>push</td>
+         <td>Update remote refs along with associated objects</td>
+      </tr>
+      <tr>
+         <td>range-diff</td>
+         <td>Compare two commit ranges (e.g. two versions of a branch)</td>
+      </tr>
+      <tr>
+         <td>rebase</td>
+         <td>Reapply commits on top of another base tip</td>
+      </tr>
+      <tr>
+         <td>reset</td>
+         <td>Reset current HEAD to the specific state</td>
+      </tr>
+      <tr>
+         <td>restore</td>
+         <td>Restore working tree files</td>
+      </tr>
+      <tr>
+         <td>revert</td>
+         <td>Revert some exsisting commits</td>
+      </tr>
+      <tr>
+         <td>rm</td>
+         <td>Remove files from the working tree and from the index</td>
+      </tr>
+      <tr>
+         <td>scalar</td>
+         <td>A tool for managing large Git repositories</td>
+      </tr>
+      <tr>
+         <td>shortlog</td>
+         <td>Sumarize 'git log' outputs</td>
+      </tr> 
+      <tr>
+         <td>show</td>
+         <td>Show various types of objects</td>
+      </tr> 
+      <tr>
+         <td>sparse-checkout</td>
+         <td>Reduce your working tree to a subset of tracked files</td>
+      </tr> 
+      <tr>
+         <td>stash</td>
+         <td>Stash the changes in a dirty working directory away</td>
+      </tr> 
+      <tr>
+         <td>status</td>
+         <td>Show the working tree status</td>
+      </tr>
+      <tr>
+         <td>submodule</td>
+         <td>Initialize, update or inspect submodules</td>
+      </tr> 
+      <tr>
+         <td>switch</td>
+         <td>Switch working branches</td>
+      </tr> 
+      <tr>
+         <td>tag</td>
+         <td>Create, list, delete or verify a tag object signed with GPG</td>
+      </tr> 
+      <tr>
+         <td>worktree</td>
+         <td>Manage multiple working trees</td>
+      </tr>
+      <tr>
+         <th colspan="2">Ancillary Commands / Manipulations</th>
+      </tr>
+      <tr id="head-color">
+         <th colspan="1" class="head-color" id="head-color">$&nbsp;git &nbsp;&lt;command&gt;</th>
+         <th class="head-color" id="head-color2">Description</th>
+      </tr>
+      <tr>
+         <td>annotate</td>
+         <td>Annotate file lines with commit information</td>
+      </tr>
+      <tr>
+         <td>blame</td>
+         <td>Show what revision and author last modified each line of a file</td>
+      </tr>
+      <tr>
+         <td>bugreport</td>
+         <td>Collect information for user to file a bug report</td>
+      </tr>
+      <tr>
+         <td>count-objects</td>
+         <td>Count unpacked number of objects and their disk consumption</td>
+      </tr>
+      <tr>
+         <td>diagnose</td>
+         <td>Generate a zip archive of diagnostic information</td>
+      </tr>
+      <tr>
+         <td>difftool</td>
+         <td>Show changes using common diff tools</td>
+      </tr>
+      <tr>
+         <td>fsck</td>
+         <td>Verifies the connectivity of validity of the objects in the database</td>
+      </tr>
+      <tr>
+         <td>gitweb</td>
+         <td>Git web interface (web frontend to Git repositories)</td>
+      </tr>
+      <tr>
+         <td>help</td>
+         <td>Display help information about Git</td>
+      </tr>
+      <tr>
+         <td>instaweb</td>
+         <td>Instantly browse your working repository in gitweb</td>
+      </tr>
+      <tr>
+         <td>merge-tree</td>
+         <td>Perform merge without touching index or working tree</td>
+      </tr>
+      <tr>
+         <td>rerere</td>
+         <td>Reuse recorded resolution of conflicted merges</td>
+      </tr>
+      <tr>
+         <td>show-branch</td>
+         <td>Show branches and their commits</td>
+      </tr>
+      <tr>
+         <td>verify-commit</td>
+         <td>Check the GPG signature of commits</td>
+      </tr>
+      <tr>
+         <td>verify-tag</td>
+         <td>Check the GPG signature of tags</td>
+      </tr>
+      <tr>
+         <td>version</td>
+         <td>Display version information about Git</td>
+      </tr>
+      <tr>
+         <td>whatchanged</td>
+         <td>Show logs with difference each commit introduces</td>
+      </tr>
+      <tr>
+         <th colspan="2">Interacting with others</th>
+      </tr>
+      <tr id="head-color">
+         <th colspan="1" class="head-color" id="head-color">$&nbsp;git &nbsp;&lt;command&gt;</th>
+         <th class="head-color" id="head-color2">Description</th>
+      </tr>
+      <tr>
+         <td>archimport</td>
+         <td>Import a GNU Arch repository into Git</td>
+      </tr>
+      <tr>
+         <td>cvsexportcommit</td>
+         <td>Export a single commit to a CVS checkout</td>
+      </tr>
+      <tr>
+         <td>cvsimport</td>
+         <td>Salvage your data out of another SCM people love to hate</td>
+      </tr>
+      <tr>
+         <td>cvsserver</td>
+         <td>A CVS server emulator for Git</td>
+      </tr>
+      <tr>
+         <td>imap-send</td>
+         <td>Send a collection of patches from stdin to an IMAP folder</td>
+      </tr>
+      <tr>
+         <td>p4</td>
+         <td>Import from and submit to Perforce repositories</td>
+      </tr>
+      <tr>
+         <td>quiltimport</td>
+         <td>Applies a quilt patchset onto the current branch</td>
+      </tr>
+      <tr>
+         <td>request-pull</td>
+         <td>Generates a summary of pending changes</td>
+      </tr>
+      <tr>
+         <td>send-email</td>
+         <td>Send a collection of patches as emails</td>
+      </tr>
+      <tr>
+         <td>svn</td>
+         <td>Bidirectional operation between a Subversion repository and Git</td>
+      </tr>
+      <tr>
+         <th colspan="2">Low-level Commands / Manipulators</th>
+      </tr>
+      <tr id="head-color">
+         <th colspan="1" class="head-color" id="head-color">$&nbsp;git &nbsp;&lt;command&gt;</th>
+         <th class="head-color" id="head-color2">Description</th>
+      </tr>
+      <tr>
+         <td>apply</td>
+         <td>Apply a patch to files and/or to the index</td>
+      </tr>
+      <tr>
+         <td>checkout-index</td>
+         <td>Copy files from the index to the working tree</td>
+      </tr><tr>
+         <td>commit-graph</td>
+         <td>Write and verify Git commit-graph files</td>
+      </tr>
+      <tr>
+         <td>commit-tree</td>
+         <td>Create a new commit object</td>
+      </tr>
+      <tr>
+         <td>hash-object</td>
+         <td>Compute object ID and optionally creates a blob from a file</td>
+      </tr>
+      <tr>
+         <td>index-pack</td>
+         <td>Build a pack index file for an existing packed archive</td>
+      </tr>
+      <tr>
+         <td>merge-file</td>
+         <td>Run a three-way file merge</td>
+      </tr>
+      <tr>
+         <td>merge-index</td>
+         <td>Run a merge for files needing merging</td>
+      </tr>
+      <tr>
+         <td>mktag</td>
+         <td>Creates a tog object with extra validation</td>
+      </tr>
+      <tr>
+         <td>mktree</td>
+         <td>Build a tree-object from ls-tree formatted text</td>
+      </tr>
+      <tr>
+         <td>multi-pack-index</td>
+         <td>Write and verify multi-pack indexes</td>
+      </tr>
+      <tr>
+         <td>pack-objects</td>
+         <td>Create a packed archive of objects</td>
+      </tr>
+      <tr>
+         <td>prune-packed</td>
+         <td>Remove extra objects that are already in pack files</td>
+      </tr>
+      <tr>
+         <td>read-tree</td>
+         <td>Reads tree information into the index</td>
+      </tr>
+      <tr>
+         <td>symbolic-ref</td>
+         <td>Read, modify and delete symbolic refs</td>
+      </tr>
+      <tr>
+         <td>unpack-objects</td>
+         <td>Unpack objects from a packed archive</td>
+      </tr>
+      <tr>
+         <td>udate-index</td>
+         <td>Register file contents in the working tree to the index</td>
+      </tr>
+      <tr>
+         <td>update-ref</td>
+         <td>Update the object name stored in a ref safely</td>
+      </tr>
+      <tr>
+         <td>write-tree</td>
+         <td>Create a tree object from the current index</td>
+      </tr>
+      <tr>
+         <th colspan="2">Low-level Commands / Interrogators</th>
+      </tr>
+      <tr id="head-color">
+         <th colspan="1" class="head-color" id="head-color">$&nbsp;git &nbsp;&lt;command&gt;</th>
+         <th class="head-color" id="head-color2">Description</th>
+      </tr>
+      <tr>
+         <td>cat-file</td>
+         <td>Provide content or type and size information for repository objects</td>
+      </tr>
+      <tr>
+         <td>cherry</td>
+         <td>Find commits yet to be applied to upstream</td>
+      </tr>
+      <tr>
+         <td>diff-files</td>
+         <td>Compares files in the working tree and the index</td>
+      </tr>
+      <tr>
+         <td>diff-index</td>
+         <td>Compare a tree to the working tree or index</td>
+      </tr>
+      <tr>
+         <td>diff-tree</td>
+         <td>Compares the content and mode of blobs found via two tree objects</td>
+      </tr>
+      <tr>
+         <td>for-each-ref</td>
+         <td>Output information on each ref</td>
+      </tr>
+      <tr>
+         <td>for-each-repo</td>
+         <td>Run a Git command on a list of repositories</td>
+      </tr>
+      <tr>
+         <td>get-tar-commit-id</td>
+         <td>Extract commit ID from an archive created using git-archive</td>
+      </tr>
+      <tr>
+         <td>ls-files</td>
+         <td>Show information about files in the index and the working tree</td>
+      </tr>
+      <tr>
+         <td>ls-remote</td>
+         <td>List references in a remote repository</td>
+      </tr>
+      <tr>
+         <td>ls-tree</td>
+         <td>List the contents of a tree object</td>
+      </tr>
+      <tr>
+         <td>merge-base</td>
+         <td>Find as good common ancestor as a possible for a merge</td>
+      </tr>
+      <tr>
+         <td>name-rev</td>
+         <td>Find symbolic names for a given revs</td>
+      </tr>
+      <tr>
+         <td>pack-redundant</td>
+         <td>Find redundant pack files</td>
+      </tr>
+      <tr>
+         <td>rev-list</td>
+         <td>Lists commit objects in reverse chronological order</td>
+      </tr>
+      <tr>
+         <td>rev-parse</td>
+         <td>Pick out and message parameters</td>
+      </tr>
+      <tr>
+         <td>show-index</td>
+         <td>Show packed archive index</td>
+      </tr>
+      <tr>
+         <td>show-ref</td>
+         <td>List references in a local repository</td>
+      </tr>
+      <tr>
+         <td>unpack-file</td>
+         <td>Creates a temporary file with a blobl's contents</td>
+      </tr>
+      <tr>
+         <td>var</td>
+         <td>Show a Git logical variable</td>
+      </tr>
+      <tr>
+         <td>verify-pack</td>
+         <td>Validate packed Git archive files</td>
+      </tr>
+      <tr>
+         <th colspan="2">Low-level Commands / Syncing Repositories</th>
+      </tr>
+      <tr id="head-color">
+         <th colspan="1" class="head-color" id="head-color">$&nbsp;git &nbsp;&lt;command&gt;</th>
+         <th class="head-color" id="head-color2">Description</th>
+      </tr>
+      <tr>
+         <td>daemon</td>
+         <td>A really simple server for Git repositories</td>
+      </tr>
+      <tr>
+         <td>fetch-pack</td>
+         <td>Receive missing objects from another repository</td>
+      </tr>
+      <tr>
+         <td>http-backend</td>
+         <td>Server side implementation of Git over HTTP</td>
+      </tr>
+      <tr>
+         <td>send-pack</td>
+         <td>Push objects over Git protocol to another repository</td>
+      </tr>
+      <tr>
+         <td>update-server-info</td>
+         <td>Update auxiliary info file to help dumb servers</td>
+      </tr>
+      <tr>
+         <th colspan="2">Low-level Commands / Internal Helpers</th>
+      </tr>
+      <tr id="head-color">
+         <th colspan="1" class="head-color" id="head-color">$&nbsp;git &nbsp;&lt;command&gt;</th>
+         <th class="head-color" id="head-color2">Description</th>
+      </tr>
+      <tr>
+         <td>check-attr</td>
+         <td>Display gitattributes information</td>
+      </tr>
+      <tr>
+         <td>check-ignore</td>
+         <td>Debug gitignore / exclude files</td>
+      </tr>
+      <tr>
+         <td>check-mailmap</td>
+         <td>Show canonical names and email addresses of contacts</td>
+      </tr>
+      <tr>
+         <td>check-ref-format</td>
+         <td>Ensures that a reference name is well formed</td>
+      </tr>
+      <tr>
+         <td>column</td>
+         <td>Display data in columns</td>
+      </tr>
+      <tr>
+         <td>credential</td>
+         <td>Retrieve and store user credentials</td>
+      </tr>
+      <tr>
+         <td>credential-cache</td>
+         <td>Helper to temporarily store passwords in memory</td>
+      </tr>
+      <tr>
+         <td>credential-store</td>
+         <td>Helper to store credentials on disk</td>
+      </tr>
+      <tr>
+         <td>fmt-merge-msg</td>
+         <td>Produce a merge commit message</td>
+      </tr>
+      <tr>
+         <td>hook</td>
+         <td>Run git hooks</td>
+      </tr>
+      <tr>
+         <td>interpret-trailers</td>
+         <td>Add or parse structured information in commit messages</td>
+      </tr>
+      <tr>
+         <td>mailinfo</td>
+         <td>Extracts patch and authorship from a single e-mail message</td>
+      </tr>
+      <tr>
+         <td>mailsplit</td>
+         <td>Simple UNIX mbox splitter program</td>
+      </tr>
+      <tr>
+         <td>merge-one-file</td>
+         <td>The standard helper program to use with git-merge-index</td>
+      </tr>
+      <tr>
+         <td>patch-id</td>
+         <td>Compute unique ID for a patch</td>
+      </tr>
+      <tr>
+         <td>sh-i18n</td>
+         <td>Git's i18n setup code for shell scripts</td>
+      </tr>
+      <tr>
+         <td>sh-setup</td>
+         <td>Common Git shell script setup code</td>
+      </tr>
+      <tr>
+         <td>stripspace</td>
+         <td>Remove unnecessary whitespace</td>
+      </tr>
+      <tr>
+         <th colspan="2">User-facing repository, command and file interfaces</th>
+      </tr>
+      <tr id="head-color">
+         <th colspan="1" class="head-color" id="head-color">$&nbsp;git &nbsp;&lt;command&gt;</th>
+         <th class="head-color" id="head-color2">Description</th>
+      </tr>
+      <tr>
+         <td>attributes</td>
+         <td>Defining attributes per path</td>
+      </tr>
+      <tr>
+         <td>cli</td>
+         <td>Git command-line interface and conventions</td>
+      </tr>
+      <tr>
+         <td>hooks</td>
+         <td>Hooks used by Git</td>
+      </tr>
+      <tr>
+         <td>ignore</td>
+         <td>Specifies intentionally untracked files to ignore</td>
+      </tr>
+      <tr>
+         <td>mailmap</td>
+         <td>Map author/committers names and/or E-Mail addresses</td>
+      </tr>
+      <tr>
+         <td>modules</td>
+         <td>Defining submodule properties</td>
+      </tr>
+      <tr>
+         <td>repository-layout</td>
+         <td>Git Repository Layout</td>
+      </tr>
+      <tr>
+         <td>revisions</td>
+         <td>Specifying revisions and ranges for Git</td>
+      </tr>
+      <tr>
+         <th colspan="2">Developer-facing file formats, protocols and other interfaces</th>
+      </tr>
+      <tr id="head-color">
+         <th colspan="1" class="head-color" id="head-color">$&nbsp;git &nbsp;&lt;command&gt;</th>
+         <th class="head-color" id="head-color2">Description</th>
+      </tr>
+      <tr>
+         <td>format-bundle</td>
+         <td>The bundle file format</td>
+      </tr>
+      <tr>
+         <td>format-chunk</td>
+         <td>Chunk-based file formats</td>
+      </tr>
+      <tr>
+         <td>format-commit-graph</td>
+         <td>Git commit graph format</td>
+      </tr>
+      <tr>
+         <td>format-index</td>
+         <td>Git index format</td>
+      </tr>
+      <tr>
+         <td>format-pack</td>
+         <td>Git pack format</td>
+      </tr>
+      <tr>
+         <td>format-signature</td>
+         <td>Git cryptographic signature formats</td>
+      </tr>
+      <tr>
+         <td>protocol-capabilities</td>
+         <td>Protocol v0 and v1 capabilities</td>
+      </tr>
+      <tr>
+         <td>protocol-common</td>
+         <td>Things common to various protocols</td>
+      </tr>
+      <tr>
+         <td>protocol-http</td>
+         <td>Git HTTP-based protocols</td>
+      </tr>
+      <tr>
+         <td>protocol-pack</td>
+         <td>How packs are transferred over-the-wire</td>
+      </tr>
+      <tr>
+         <td>protocol-v2</td>
+         <td>Git Wire Protocol, Version 2</td>
+      </tr>
+      <tr>
+         <th colspan="2">External Commands</th>
+      </tr>
+      <tr id="head-color">
+         <th colspan="1" class="head-color" id="head-color">$&nbsp;git &nbsp;&lt;command&gt;</th>
+      </tr>
+      <tr>
+         <td>askpass</td>
+      </tr>
+      <tr>
+         <td>askyesno</td>
+      </tr>
+      <tr>
+         <td>credential-helper-selector</td>
+      </tr>
+      <tr>
+         <td>credential-manager-core</td>
+      </tr>
+      <tr>
+         <td>flow</td>
+      </tr>
+      <tr>
+         <td>flow</td>
+      </tr>
+      <tr>
+         <td>lfs</td>
+      </tr>
+      <tr>
+         <td>update-git-for-windows</td>
+         <td>Updates Git to the latest version</td>
+      </tr>
+   </table>
+   
+   <script src="../JS/Git-Commands.js"></script>
+</body>
+</html>

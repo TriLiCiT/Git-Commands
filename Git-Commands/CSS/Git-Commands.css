@@ -1,0 +1,88 @@
+body {
+   min-width: 100vw;
+   min-height: 100vh;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   background-color: rgb(80, 80, 80);
+   color: rgb(0, 19, 189);
+   font-size: 22px;
+}
+
+hr {
+   border: dotted  yellow 5px;
+}
+
+header {
+   position: relative;
+   margin: 50px 25%;
+   text-align: center;
+   border: ridge red 3px;
+   color: red;
+   border-radius: 25%;
+   background-image: url(../Logo/git-logo.png);
+   background-position: center center;
+   background-size: contain;
+   box-shadow: inset white 1px 1px 15px 2px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: -1;
+}
+
+h2 {
+   position: relative;
+   width: fit-content;
+   padding: 10px 15px;
+   border-radius: 20%;
+   z-index: 1;
+   background-color: rgb(252, 252, 252);
+}
+
+table {
+   width: 50%;
+   margin: 30px 25%;
+}
+
+th, thead{
+   color: rgb(245, 245, 245);
+   text-shadow: 5px 2px 4px black;
+   text-decoration: overline;
+}
+.head-color, #head-color {
+   position: sticky;
+   position: -webkit-sticky;
+   top: 0;
+   padding-bottom: 10px;
+   color: rgb(0, 0, 0);
+   text-shadow: 1px 1px 2px white;
+   text-decoration: underline;
+}
+
+
+tr {
+   color: red;
+}
+
+td {
+   padding: 10px;
+   border: solid black 2px;
+   text-align: center;
+   background-color: rgba(240, 248, 255, 0.411);
+}
+td:hover {
+   background-color: yellow;
+}
+
+@media screen and (max-width:700px) {
+   body {
+      font-size: 16px;
+   }
+   table {
+      width: 100%;
+      margin: 0;
+   }
+   h2 {
+      padding: 0;
+   }
+}
